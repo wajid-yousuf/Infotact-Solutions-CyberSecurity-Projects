@@ -97,5 +97,10 @@ When we enter the SQL payload we will get a 403 forbidden message:\
 <img width="722" height="294" alt="twelve" src="https://github.com/user-attachments/assets/d7e36275-f160-46ed-8748-7ac36747015c" />
 -> Verify the Block: When you click Login, you'll receive a 403 forbidden error from the server. The WAF has blocked your request. You can see your request. You can see the block message in Apache's error log('sudo tail /var/log/apache2/error.log').\
 <img width="1282" height="639" alt="thirteen" src="https://github.com/user-attachments/assets/ff8eb571-c70f-4305-9389-dbc84a27fe26" />\
-Looking at the logs we can see that it says Warning: 'Pattern Match'
+Looking at the logs we can see that it says Warning: 'Pattern Match'. And we can also see the attacker VM IP address.
+We can also use 'curl'.\
+<img width="735" height="182" alt="beforeFifteen" src="https://github.com/user-attachments/assets/e5332069-4ac7-4c6e-81d0-f99e93994b15" />\
+And if we check the logs we can see the 'User-Agent', SQL Injection query, etc.\
+<img width="1280" height="631" alt="fifteen" src="https://github.com/user-attachments/assets/805a07dc-9831-48ba-8958-cccc8d3afd05" />
+
 
