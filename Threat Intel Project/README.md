@@ -10,8 +10,12 @@ Enter a Key Name, an API key will be generated which we will use in our Python s
 
 **Installing dependencies**\ 
 We will need to install `requests` module, because we have to make requests to AbuseIPDB website. Use `pip3 install requests` or `sudo apt install python3-requests`.\
-To run `threatChecker.py` in terminal, use `python3 threatChecker.py`.\
+To run `threatChecker.py` in terminal, use `python3 threatChecker.py`.
+
+<img width="646" height="193" alt="image" src="https://github.com/user-attachments/assets/9d60ee9b-950d-492b-a294-e278ea8b6497" />
+
+We will get an output similar to above image.
 
 **Analyze the Output**: The script will first print that it's fetching data and updating the database.\
-Then, it will scan the access.log file it created. Since the threat feed is live, the exact malicious IPs will change, but you should see at least one "ALERT"\ 
+Then, it will scan the access.log file it created. Since the threat feed is live, the exact malicious IPs will change, but you should see at least one "ALERT"
 message if any of the IPs in your access.log happen to be on the current AbuseIPDB blacklist.
